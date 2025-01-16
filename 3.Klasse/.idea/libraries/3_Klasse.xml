@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="3.Klasse">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/extends.zip!/" />
+      <root url="jar://$PROJECT_DIR$/A18 Adressbuch verbessert.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Umwelterfassungsdaten.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
