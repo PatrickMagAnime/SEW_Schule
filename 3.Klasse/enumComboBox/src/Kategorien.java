@@ -1,3 +1,3 @@
-public enum Kategorien {
+public enum Kategorie {
     LEBENSMITTEL,ELEKTRONIK, SONSTIGES
 }

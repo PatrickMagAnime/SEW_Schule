@@ -22,10 +22,13 @@ public class GUI {
     }
 
     public GUI(){
-        kategorieCBox.setModel(new DefaultComboBoxModel(Kategorien.values()));
+        kategorieCBox.setModel(new DefaultComboBoxModel(Kategorie.values()));
         suchenButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-                for (int i = 0; 1 < Kategorien.values().length; i++) {
-                    textArea1.append(Kategorien.values()[i].toString() + "\n");
+                for (int i = 0; 1 < Kategorie.values().length; i++) {
+                    textArea1.append(Kategorie.values()[i].toString() + "\n");
                 }}});}}
+// ctl + k
+// ctl + shift + k
+
