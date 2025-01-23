@@ -25,7 +25,7 @@ public class ProduktManager {
             return gson.fromJson(reader, listType);
         } catch (IOException e) {
             e.printStackTrace();
-            return new ArrayList<>(); // Leere Liste zurückgeben, falls Fehler
+            return new ArrayList<>(); //leere liste zurückgeben falls Fehler
         }
     }
 }

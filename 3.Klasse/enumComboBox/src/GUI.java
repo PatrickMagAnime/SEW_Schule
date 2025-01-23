@@ -4,12 +4,14 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class GUI {
-    private JTextField textField1; // Produktname
-    private JTextField textField2; // Preis
-    private JTextField textField3; // Dateipfad
+    private JTextField textField1;
+    private JTextField textField2;
+    private JTextField textField3;
     private JButton ladenButton;
     private JButton suchenButton;
     private JButton speichernButton;
+    private JButton xmlSpeichernButton;
+    private JButton xmlLadenButton;
     private JTextArea textArea1;
     private JPanel mainPanel;
     private JComboBox<Kategorien> kategorieCBox;
@@ -39,8 +41,8 @@ public class GUI {
                     produkte.add(produkt);
 
                     String filePath = textField3.getText();
-                    ProduktManager.saveProdukte(produkte, filePath);
-                    textArea1.append("Produkt gespeichert: " + produkt + "\n");
+                    ProduktManager.saveProdukte(produkte, filePath); // JSON speichern
+                    textArea1.append("Produkt gespeichert (JSON): " + produkt + "\n");
                 } catch (NumberFormatException ex) {
                     textArea1.append("Ungültiger Preis.\n");
                 }
@@ -51,8 +53,29 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String filePath = textField3.getText();
-                produkte = ProduktManager.loadProdukte(filePath);
-                textArea1.setText("Produkte geladen:\n");
+                produkte = ProduktManager.loadProdukte(filePath); // JSON laden
+                textArea1.setText("Produkte geladen (JSON):\n");
+                for (Produkt produkt : produkte) {
+                    textArea1.append(produkt + "\n");
+                }
+            }
+        });
+
+        xmlSpeichernButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String filePath = textField3.getText();
+                ProduktXMLManager.saveProdukte(produkte, filePath); // XML speichern
+                textArea1.append("Produkte gespeichert (XML).\n");
+            }
+        });
+
+        xmlLadenButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String filePath = textField3.getText();
+                produkte = ProduktXMLManager.loadProdukte(filePath); // XML laden
+                textArea1.setText("Produkte geladen (XML):\n");
                 for (Produkt produkt : produkte) {
                     textArea1.append(produkt + "\n");
                 }
