@@ -10,11 +10,12 @@ public class GUI {
     private JButton ladenButton;
     private JButton suchenButton;
     private JButton speichernButton;
-    private JButton xmlSpeichernButton;
-    private JButton xmlLadenButton;
     private JTextArea textArea1;
     private JPanel mainPanel;
     private JComboBox<Kategorien> kategorieCBox;
+    private JRadioButton radioJson;
+    private JRadioButton radioXml;
+    private ButtonGroup formatButtonGroup;
 
     private ArrayList<Produkt> produkte = new ArrayList<>();
 
@@ -27,7 +28,14 @@ public class GUI {
     }
 
     public GUI() {
+        // Kategorie-ComboBox initialisieren
         kategorieCBox.setModel(new DefaultComboBoxModel<>(Kategorien.values()));
+
+        // Radio Buttons gruppieren
+        formatButtonGroup = new ButtonGroup();
+        formatButtonGroup.add(radioJson);
+        formatButtonGroup.add(radioXml);
+        radioJson.setSelected(true); // JSON ist das Standardformat
 
         speichernButton.addActionListener(new ActionListener() {
             @Override
@@ -41,8 +49,13 @@ public class GUI {
                     produkte.add(produkt);
 
                     String filePath = textField3.getText();
-                    ProduktManager.saveProdukte(produkte, filePath); // JSON speichern
-                    textArea1.append("Produkt gespeichert (JSON): " + produkt + "\n");
+                    if (radioJson.isSelected()) {
+                        ProduktManager.saveProdukte(produkte, filePath); // JSON speichern
+                        textArea1.append("Produkt gespeichert (JSON): " + produkt + "\n");
+                    } else if (radioXml.isSelected()) {
+                        ProduktXMLManager.saveProdukte(produkte, filePath); // XML speichern
+                        textArea1.append("Produkt gespeichert (XML): " + produkt + "\n");
+                    }
                 } catch (NumberFormatException ex) {
                     textArea1.append("Ungültiger Preis.\n");
                 }
@@ -53,29 +66,14 @@ public class GUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String filePath = textField3.getText();
-                produkte = ProduktManager.loadProdukte(filePath); // JSON laden
-                textArea1.setText("Produkte geladen (JSON):\n");
-                for (Produkt produkt : produkte) {
-                    textArea1.append(produkt + "\n");
+                if (radioJson.isSelected()) {
+                    produkte = ProduktManager.loadProdukte(filePath); // JSON laden
+                    textArea1.setText("Produkte geladen (JSON):\n");
+                } else if (radioXml.isSelected()) {
+                    produkte = ProduktXMLManager.loadProdukte(filePath); // XML laden
+                    textArea1.setText("Produkte geladen (XML):\n");
                 }
-            }
-        });
 
-        xmlSpeichernButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String filePath = textField3.getText();
-                ProduktXMLManager.saveProdukte(produkte, filePath); // XML speichern
-                textArea1.append("Produkte gespeichert (XML).\n");
-            }
-        });
-
-        xmlLadenButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                String filePath = textField3.getText();
-                produkte = ProduktXMLManager.loadProdukte(filePath); // XML laden
-                textArea1.setText("Produkte geladen (XML):\n");
                 for (Produkt produkt : produkte) {
                     textArea1.append(produkt + "\n");
                 }

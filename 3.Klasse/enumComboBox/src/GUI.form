@@ -88,7 +88,7 @@
           <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Speichern in json"/>
+          <text value="Speichern"/>
         </properties>
       </component>
       <component id="8d8ed" class="javax.swing.JButton" binding="suchenButton" default-binding="true">
@@ -107,20 +107,20 @@
           <text value="Laden"/>
         </properties>
       </component>
-      <component id="d1ed2" class="javax.swing.JButton" binding="xmlSpeichernButton">
+      <component id="9e376" class="javax.swing.JRadioButton" binding="radioXml">
         <constraints>
-          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Speichern in xml"/>
+          <text value="XML"/>
         </properties>
       </component>
-      <component id="e3f8d" class="javax.swing.JButton" binding="xmlLadenButton">
+      <component id="308ba" class="javax.swing.JRadioButton" binding="radioJson">
         <constraints>
-          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Laden in xml"/>
+          <text value="JSON"/>
         </properties>
       </component>
     </children>
