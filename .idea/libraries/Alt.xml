@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Alt">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Alt/Methodenspielerei.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/GGT.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/Tic Tac Toe.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/A11.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/Adressbuch.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/A12 echt.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/A12.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/array.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/Palindrom.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/Zufallszahl.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Alt/JavaSwing.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

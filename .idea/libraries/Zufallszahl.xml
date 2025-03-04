@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Zufallszahl">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Alt/Zufallszahl/dist/Zufallszahl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

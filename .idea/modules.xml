@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Bankanwendung/Bankanwendung.iml" filepath="$PROJECT_DIR$/Bankanwendung/Bankanwendung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eds/Eds.iml" filepath="$PROJECT_DIR$/Eds/Eds.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exception/Exception.iml" filepath="$PROJECT_DIR$/Exception/Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Main/Main.iml" filepath="$PROJECT_DIR$/Main/Main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Schule.iml" filepath="$PROJECT_DIR$/.idea/Schule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Transportfirma/Transportfirma.iml" filepath="$PROJECT_DIR$/Transportfirma/Transportfirma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Uebung 10/Uebung 10.iml" filepath="$PROJECT_DIR$/Uebung 10/Uebung 10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/readwrite/readwrite.iml" filepath="$PROJECT_DIR$/readwrite/readwrite.iml" />
+    </modules>
+  </component>
+</project>
