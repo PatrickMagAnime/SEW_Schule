@@ -258,7 +258,7 @@ public class Main {
      * Hinweis: n % 10 liefert die letzte Ziffer, n / 10 entfernt die letzte Ziffer.
      *
      * Beispiele:
-     *   Input: 717
+     *   Input: 727 WYSI
      *   Erwartete Ausgabe: 2
      *
      *   Input: 7
