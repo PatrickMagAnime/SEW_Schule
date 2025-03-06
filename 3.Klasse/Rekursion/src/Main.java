@@ -1,40 +1,102 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // Übungen: https://codingbat.com/java/Recursion-1
-        int result;
+        Scanner scanner = new Scanner(System.in);
 
-        result = ue1Factorial(1);
-        System.out.println("UE1 factorial(1) = " + result);
+        while (true) {
+            System.out.println("Wähle eine Übung (1-10) oder 0 zum Beenden:");
+            int choice = scanner.nextInt();
+            if (choice == 0) {
+                break;
+            }
 
-        result = ue2BunnyEars(1);
-        System.out.println("UE2 bunnyEars(1) = " + result);
+            switch (choice) {
+                case 1:
+                    System.out.println("Gib eine Zahl für factorial ein:");
+                    int n1 = scanner.nextInt();
+                    int result1 = ue1Factorial(n1);
+                    System.out.println("UE1 factorial(" + n1 + ") = " + result1);
+                    break;
 
-        result = ue3Fibonacci(2);
-        System.out.println("UE3 fibonacci(2) = " + result);
+                case 2:
+                    System.out.println("Gib die Anzahl der Hasen für bunnyEars ein:");
+                    int bunnies2 = scanner.nextInt();
+                    int result2 = ue2BunnyEars(bunnies2);
+                    System.out.println("UE2 bunnyEars(" + bunnies2 + ") = " + result2);
+                    break;
 
-        result = ue4BunnyEars2(2);
-        System.out.println("UE4 bunnyEars2(2) = " + result);
+                case 3:
+                    System.out.println("Gib eine Zahl für fibonacci ein:");
+                    int n3 = scanner.nextInt();
+                    int result3 = ue3Fibonacci(n3);
+                    System.out.println("UE3 fibonacci(" + n3 + ") = " + result3);
+                    break;
 
-        result = ue5Triangle(2);
-        System.out.println("UE5 triangle(2) = " + result);
+                case 4:
+                    System.out.println("Gib die Anzahl der Hasen für bunnyEars2 ein:");
+                    int bunnies4 = scanner.nextInt();
+                    int result4 = ue4BunnyEars2(bunnies4);
+                    System.out.println("UE4 bunnyEars2(" + bunnies4 + ") = " + result4);
+                    break;
 
-        result = ue6SumDigits(12);
-        System.out.println("UE6 sumDigits(12) = " + result);
+                case 5:
+                    System.out.println("Gib die Anzahl der Reihen für triangle ein:");
+                    int rows5 = scanner.nextInt();
+                    int result5 = ue5Triangle(rows5);
+                    System.out.println("UE5 triangle(" + rows5 + ") = " + result5);
+                    break;
 
-        result = ue7Count7(717);
-        System.out.println("UE7 count7(717) = " + result);
+                case 6:
+                    System.out.println("Gib eine Zahl für sumDigits ein:");
+                    int n6 = scanner.nextInt();
+                    int result6 = ue6SumDigits(n6);
+                    System.out.println("UE6 sumDigits(" + n6 + ") = " + result6);
+                    break;
 
-        result = ue8Count8(8818);
-        System.out.println("UE8 count8(8818) = " + result);
+                case 7:
+                    System.out.println("Gib eine Zahl für count7 ein:");
+                    int n7 = scanner.nextInt();
+                    int result7 = ue7Count7(n7);
+                    System.out.println("UE7 count7(" + n7 + ") = " + result7);
+                    break;
 
-        result = ue9PowerN(3, 2);
-        System.out.println("UE9 powerN(3, 2) = " + result);
+                case 8:
+                    System.out.println("Gib eine Zahl für count8 ein:");
+                    int n8 = scanner.nextInt();
+                    int result8 = ue8Count8(n8);
+                    System.out.println("UE8 count8(" + n8 + ") = " + result8);
+                    break;
 
-        int[] nums = {1, 2, 20};
-        boolean resultBool = ue10Array220(nums, 0);
+                case 9:
+                    System.out.println("Gib die Basis und den Exponenten für powerN ein (zwei Zahlen):");
+                    int base9 = scanner.nextInt();
+                    int exp9 = scanner.nextInt();
+                    int result9 = ue9PowerN(base9, exp9);
+                    System.out.println("UE9 powerN(" + base9 + ", " + exp9 + ") = " + result9);
+                    break;
 
-        System.out.println("UE10 array220([1, 2, 20], 0) = " + resultBool);
+                case 10:
+                    System.out.println("Gib die Länge des Arrays und dann die Elemente für array220 ein:");
+                    int length = scanner.nextInt();
+                    int[] nums = new int[length];
+                    for (int i = 0; i < length; i++) {
+                        nums[i] = scanner.nextInt();
+                    }
+                    System.out.println("Gib den Startindex ein:");
+                    int index10 = scanner.nextInt();
+                    boolean resultBool = ue10Array220(nums, index10);
+                    System.out.println("UE10 array220(" + Arrays.toString(nums) + ", " + index10 + ") = " + resultBool);
+                    break;
+
+                default:
+                    System.out.println("Ungültige Auswahl. Bitte wähle eine Nummer zwischen 1 und 10 oder 0 zum Beenden.");
+            }
+        }
     }
+
 
     /**
      * Aufgabe: Berechnet die Fakultät einer gegebenen Zahl n (n ≥ 1).
