@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -8,6 +9,16 @@ public class Main {
 
         while (true) {
             System.out.println("Wähle eine Übung (1-10) oder 0 zum Beenden:");
+            System.out.println("1.Factorial");
+            System.out.println("2.Hasen bunny ears");
+            System.out.println("3.fibonacchi");
+            System.out.println("4.bunny ears 2");
+            System.out.println("5.triangle");
+            System.out.println("6.sum digits");
+            System.out.println("7.count7");
+            System.out.println("8.count8");
+            System.out.println("9.exponenten");
+            System.out.println("10.array");
             int choice = scanner.nextInt();
             if (choice == 0) {
                 break;
