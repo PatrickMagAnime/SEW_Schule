@@ -1,0 +1,73 @@
+[
+  {
+    "frage": "Was ist Polymorphismus?",
+    "antwort": "Die Fähigkeit, Objekte verschiedenster Klassen über ein gemeinsames Interface zu behandeln.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0,
+    "farbe": "#990099"
+  },
+  {
+    "frage": "Was bedeutet OOP?",
+    "antwort": "Objektorientierte Programmierung.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Wofür steht JVM?",
+    "antwort": "Java Virtual Machine.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Was ist der Unterschied zwischen `\u003d\u003d` und `equals()` in Java?",
+    "antwort": "`\u003d\u003d` vergleicht Referenzen, `equals()` vergleicht Inhalte.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Was ist eine abstrakte Klasse?",
+    "antwort": "Eine Klasse, die nicht instanziiert werden kann und abstrakte Methoden enthalten kann.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Wie definiert man eine `for`-Schleife in Java?",
+    "antwort": "for (Initialisierung; Bedingung; Inkrement) { /* ... */ }",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Was ist eine `ArrayList`?",
+    "antwort": "Eine dynamisch veränderbare Liste, die Elemente in einem internen Array speichert.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Was macht `try-catch`?",
+    "antwort": "Fängt Ausnahmen (`Exceptions`) ab und ermöglicht deren Behandlung.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Wozu dient das Schlüsselwort `static`?",
+    "antwort": "Kennzeichnet Klassen­variablen und -methoden, die ohne Objekt­instanz nutzbar sind.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  },
+  {
+    "frage": "Was ist eine Schnittstelle (`interface`) in Java?",
+    "antwort": "Ein Vertrag, der nur Methodensignaturen enthält und von Klassen implementiert wird.",
+    "gelernt": false,
+    "anzahlGefragt": 0,
+    "anzahlRichtig": 0
+  }
+]

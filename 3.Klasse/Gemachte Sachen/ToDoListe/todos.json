@@ -1,0 +1,23 @@
+[
+  {
+    "titel": "Einkaufen",
+    "beschreibung": "Milch, Brot, Eier besorgen",
+    "erledigt": false,
+    "prioritaet": 2,
+    "kategorie": "PRIVAT"
+  },
+  {
+    "titel": "Projektbericht schreiben",
+    "beschreibung": "Einleitung und Methoden fertigstellen",
+    "erledigt": false,
+    "prioritaet": 5,
+    "kategorie": "SCHULE"
+  },
+  {
+    "titel": "Auto waschen",
+    "beschreibung": "",
+    "erledigt": true,
+    "prioritaet": 1,
+    "kategorie": "PRIVAT"
+  }
+]

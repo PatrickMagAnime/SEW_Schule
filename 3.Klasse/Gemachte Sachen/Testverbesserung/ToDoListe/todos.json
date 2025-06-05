@@ -1,0 +1,23 @@
+[
+  {
+    "titel": "uihwefiregure",
+    "beschreibung": "234567890987654",
+    "erledigt": false,
+    "prioritaet": 6,
+    "kategorie": "PRIVAT"
+  },
+  {
+    "titel": "test",
+    "beschreibung": "das ein test",
+    "erledigt": false,
+    "prioritaet": 5,
+    "kategorie": "SCHULE"
+  },
+  {
+    "titel": "2",
+    "beschreibung": "2",
+    "erledigt": true,
+    "prioritaet": 2,
+    "kategorie": "PRIVAT"
+  }
+]

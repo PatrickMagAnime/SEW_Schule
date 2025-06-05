@@ -1,0 +1,1871 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="de" xml:lang="de" class="yui3-js-enabled"><head>
+    <title>24-25-3AHITN-SEW-STRI: 16. Arbeitsblatt Rekursion | Lernplattform der htl donaustadt</title>
+    <link rel="shortcut icon" href="https://moodle.htl-donaustadt.at/theme/image.php/boost/theme/1743630658/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, 24-25-3AHITN-SEW-STRI: 16. Arbeitsblatt Rekursion | Lernplattform der htl donaustadt">
+<link rel="stylesheet" type="text/css" href="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo.css"><script charset="utf-8" id="yui_3_18_1_1_1749158600585_8" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript_003.php" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1749158600585_15" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_18_1_1_1749158600585_16" href="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo_002.css"><script charset="utf-8" id="yui_3_18_1_1_1749158600585_17" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo_005" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1749158600585_18" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript_002.php" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1749158600585_19" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo_002" async=""></script><script charset="utf-8" id="yui_3_18_1_1_1749158600585_36" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo_003" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/styles.css">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.htl-donaustadt.at","homeurl":{},"sesskey":"XcxCGIlqiL","sessiontimeout":"28800","sessiontimeoutwarning":1200,"themerev":"1743630658","slasharguments":1,"theme":"boost","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1743630658","admin":"admin","svgicons":true,"usertimezone":"Europa\/Wien","language":"de","courseId":8854,"courseContextId":129435,"contextid":141253,"contextInstanceId":93254,"langrev":1749003858,"templaterev":"1743630658","siteId":1};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.htl-donaustadt.at\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/moodle.htl-donaustadt.at\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.htl-donaustadt.at\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.htl-donaustadt.at\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.htl-donaustadt.at\/theme\/yui_combo.php?m\/1743630658\/","combine":true,"comboBase":"https:\/\/moodle.htl-donaustadt.at\/theme\/yui_combo.php?","ext":false,"root":"m\/1743630658\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.htl-donaustadt.at\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.htl-donaustadt.at\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1743630658\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.htl-donaustadt.at\/lib\/javascript.php\/1743630658\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.htl-donaustadt.at\/lib\/javascript.php\/1743630658\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mod_assign":{"name":"mod_assign","fullpath":"https:\/\/moodle.htl-donaustadt.at\/lib\/javascript.php\/1743630658\/mod\/assign\/module.js","requires":[]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript_006.php"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript">
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-85730');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94146');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94997');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-23113');
+    });
+    ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-86872');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-88615');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89132');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89399');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89658');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89673');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90098');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90391');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90463');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90600');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-91291');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-91727');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92074');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92488');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93254');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93255');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93256');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93521');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93890');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94127');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94577');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94647');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94662');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94873');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-94880');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-95107');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-95110');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-95485');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-95867');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-23429');
+    });
+    ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24731');
+    });
+    ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92735');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92736');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92737');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92738');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92742');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24657');
+    });
+    ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89010');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-89053');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90369');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-90394');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-91726');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93257');
+                });
+                ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-93886');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24012');
+    });
+    ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24327');
+    });
+    ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24414');
+    });
+    ;
+
+                require(['core_courseformat/local/courseindex/cm'], function(component) {
+                    component.init('course-index-cm-92931');
+                });
+                ;
+
+    require(['core_courseformat/local/courseindex/section'], function(component) {
+        component.init('course-index-section-24687');
+    });
+    ;
+
+require(['core_courseformat/local/courseindex/courseindex'], function(component) {
+    component.init('course-index');
+});
+</script></head>
+<body id="page-mod-assign-view" class="format-topics limitedwidth  path-mod path-mod-assign gecko dir-ltr lang-de yui-skin-sam yui3-skin-sam moodle-htl-donaustadt-at pagelayout-incourse course-8854 context-141253 cmid-93254 cm-type-assign category-8 theme uses-drawers drawer-open-index jsenabled">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Zum Hauptinhalt</a>
+</div><script src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript_005.php"></script>
+<script src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/combo_004"></script><script src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript.php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <nav class="navbar fixed-top navbar-light bg-white navbar-expand" aria-label="Site-Navigation">
+        <div class="container-fluid">
+            <button class="navbar-toggler aabtn d-block d-md-none px-1 my-1 border-0" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-primary">
+                <span class="navbar-toggler-icon"></span>
+                <span class="sr-only">Website-Übersicht</span>
+            </button>
+    
+            <a href="https://moodle.htl-donaustadt.at/my/" class="navbar-brand d-none d-md-flex align-items-center m-0 mr-4 p-0 aabtn">
+    
+                    Lernplattform der htl donaustadt
+            </a>
+                <div class="primary-navigation">
+                    <nav class="moremenu navigation observed">
+                        <ul id="moremenu-68420ac826b22-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link  " href="https://moodle.htl-donaustadt.at/?redirect=0" data-disableactive="true" tabindex="0" aria-current="true">
+                                                    Startseite
+                                                </a>
+                                    </li>
+                                    <li data-key="myhome" class="nav-item" role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link  " href="https://moodle.htl-donaustadt.at/my/" data-disableactive="true" tabindex="-1">
+                                                    Dashboard
+                                                </a>
+                                    </li>
+                                    <li data-key="mycourses" class="nav-item" role="none" data-forceintomoremenu="false">
+                                                <a role="menuitem" class="nav-link  " href="https://moodle.htl-donaustadt.at/my/courses.php" data-disableactive="true" tabindex="-1">
+                                                    Meine Kurse
+                                                </a>
+                                    </li>
+                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                                <a class="dropdown-toggle nav-link " href="#" id="moremenu-dropdown-68420ac826b22" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    Mehr
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-68420ac826b22" role="menu">
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+            <ul class="navbar-nav d-none d-md-flex my-1 px-1">
+                <!-- page_heading_menu -->
+                
+            </ul>
+    
+            <div id="usernavigation" class="navbar-nav ml-auto h-100">
+                <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="6451" data-region="popover-region">
+    <div class="popover-region-toggle nav-link icon-no-margin" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-68420ac835aba68420ac7d26b94" aria-haspopup="true" aria-label="  Mitteilungsfenster mit 13 neuen Systemnachrichten anzeigen  " tabindex="0">
+                <i class="icon fa fa-bell-o fa-fw " title="Systemnachrichten" role="img" aria-label="Systemnachrichten"></i>
+        <div class="count-container " data-region="count-container" aria-hidden="true">
+            13
+        </div>
+
+    </div>
+    <div id="popover-region-container-68420ac835aba68420ac7d26b94" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true" aria-label="Mitteilungsfenster" role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Systemnachrichten</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button" href="#" title="Alle als gelesen markieren" data-action="mark-all-read" role="button" aria-label="Alle als gelesen markieren">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-sm fa-fw " title="Laden ..." role="img" aria-label="Laden ..."></i></span>
+        </a>
+            <a href="https://moodle.htl-donaustadt.at/message/notificationpreferences.php" title="Systemnachrichten" aria-label="Systemnachrichten">
+                <i class="icon fa fa-cog fa-fw " aria-hidden="true"></i></a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications" data-region="all-notifications" role="log" aria-busy="false" aria-atomic="false" aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Keine Systemnachrichten</div>
+
+            </div>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-sm fa-fw " title="Laden ..." role="img" aria-label="Laden ..."></i></span>
+        </div>
+                <a class="see-all-link" href="https://moodle.htl-donaustadt.at/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Alle anzeigen</div>
+                    </div>
+                </a>
+    </div>
+</div>
+                <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                        <div class="usermenu">
+                                <div class="dropdown show">
+                                    <a href="#" role="button" id="user-menu-toggle" data-toggle="dropdown" aria-label="Nutzermenü" aria-haspopup="true" aria-controls="user-action-menu" class="btn dropdown-toggle">
+                                        <span class="userbutton">
+                                            <span class="avatars">
+                                                    <span class="avatar current">
+                                                        <img src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/f2.png" class="userpicture" width="35" height="35" alt="">
+                                                    </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <div id="user-action-menu" class="dropdown-menu dropdown-menu-right">
+                                        <div id="usermenu-carousel" class="carousel slide" data-touch="false" data-interval="false" data-keyboard="false">
+                                            <div class="carousel-inner">
+                                                <div id="carousel-item-main" class="carousel-item active" role="menu" tabindex="-1" aria-label="Nutzer/in">
+                                                            <a href="https://moodle.htl-donaustadt.at/user/profile.php" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Profil
+                                                            </a>
+                                                        
+                                                            <a href="https://moodle.htl-donaustadt.at/grade/report/overview/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Bewertungen
+                                                            </a>
+                                                        
+                                                            <a href="https://moodle.htl-donaustadt.at/calendar/view.php?view=month" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Kalender
+                                                            </a>
+                                                        
+                                                            <a href="https://moodle.htl-donaustadt.at/user/files.php" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Meine Dateien
+                                                            </a>
+                                                        
+                                                            <a href="https://moodle.htl-donaustadt.at/reportbuilder/index.php" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Berichte
+                                                            </a>
+                                                        
+                                                        <div class="dropdown-divider"></div>
+                                                            <a href="https://moodle.htl-donaustadt.at/user/preferences.php" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Einstellungen
+                                                            </a>
+                                                        
+                                                            <a href="#" class="carousel-navigation-link dropdown-item" role="menuitem" tabindex="-1" data-carousel-target-id="carousel-item-68420ac826fcb">
+                                                                    
+                                                                Sprache
+                                                            </a>
+                                                        <div class="dropdown-divider"></div>
+                                                            <a href="https://moodle.htl-donaustadt.at/login/logout.php?sesskey=XcxCGIlqiL" class="dropdown-item" role="menuitem" tabindex="-1">
+                                                                    
+                                                                Logout
+                                                            </a>
+                                                        
+                                                </div>
+                                                    <div id="carousel-item-68420ac826fcb" role="menu" class="carousel-item submenu" tabindex="-1" aria-label="Sprachwahl">
+                                                        <div class="d-flex flex-column h-100">
+                                                            <div class="header">
+                                                                <button type="button" class="btn btn-icon carousel-navigation-link text-decoration-none text-body" data-carousel-target-id="carousel-item-main" aria-label="Zurück zum Nutzermenü">
+                                                                    <span class="dir-rtl-hide"><img class="icon " alt="" aria-hidden="true" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/arrow-left.svg"></span>
+                                                                    <span class="dir-ltr-hide"><img class="icon " alt="" aria-hidden="true" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/arrow-right.svg"></span>
+                                                                </button>
+                                                                <span class="pl-2" id="carousel-item-title-68420ac826fcb">Sprachwahl</span>
+                                                            </div>
+                                                            <div class="dropdown-divider"></div>
+                                                            <div class="items h-100 overflow-auto" role="menu" aria-labelledby="carousel-item-title-68420ac826fcb">
+                                                                        <a href="#" class="dropdown-item pl-5" role="menuitem" tabindex="-1" aria-current="true">
+                                                                            Deutsch ‎(de)‎
+                                                                        </a>
+                                                                        <a href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93254&amp;rownum=0&amp;useridlistid=68420ac7c0c03517141770&amp;action&amp;lang=en" class="dropdown-item pl-5" role="menuitem" tabindex="-1" lang="en">
+                                                                            English ‎(en)‎
+                                                                        </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    
+
+<div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+    <div class="drawerheader">
+        <button class="btn drawertoggle icon-no-margin hidden" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-primary" data-toggle="tooltip" data-placement="right" title="Leiste schließen" data-aria-hidden-tab-index="" tabindex="-1">
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+        </button>
+        <a href="https://moodle.htl-donaustadt.at/my/" title="Lernplattform der htl donaustadt" data-region="site-home-link" class="aabtn text-reset d-flex align-items-center py-1 h-100 d-md-none" data-aria-hidden-tab-index="" tabindex="-1">
+                        <span class="sitename" title="Lernplattform der htl donaustadt">Lernplattform der htl donaustadt</span>
+
+        </a>
+        <div class="drawerheadercontent hidden">
+            
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://moodle.htl-donaustadt.at/?redirect=0" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
+                    Startseite
+                </a>
+                <a href="https://moodle.htl-donaustadt.at/my/" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
+                    Dashboard
+                </a>
+                <a href="https://moodle.htl-donaustadt.at/my/courses.php" class="list-group-item list-group-item-action  " data-aria-hidden-tab-index="" tabindex="-1">
+                    Meine Kurse
+                </a>
+        </div>
+
+    </div>
+</div>
+        <div class="drawer drawer-left show d-print-none scrolled" data-region="fixed-drawer" id="theme_boost-drawers-courseindex" data-preference="drawer-open-index" data-state="show-drawer-left" data-forceopen="0" data-close-on-resize="0">
+    <div class="drawerheader">
+        <button class="btn drawertoggle icon-no-margin" data-toggler="drawers" data-action="closedrawer" data-target="theme_boost-drawers-courseindex" data-toggle="tooltip" data-placement="right" title="Kursindex schließen">
+            <i class="icon fa fa-times fa-fw " aria-hidden="true"></i>
+        </button>
+        <a href="https://moodle.htl-donaustadt.at/my/" title="Lernplattform der htl donaustadt" data-region="site-home-link" class="aabtn text-reset d-flex align-items-center py-1 h-100 d-md-none">
+            
+        </a>
+        <div class="drawerheadercontent">
+                            <div id="courseindexdrawercontrols" class="dropdown">
+                    <button class="btn btn-icon rounded-circle mx-2" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Optionen für den Kursindex">
+                        <i class="icon fa fa-ellipsis-v fa-fw m-0" aria-hidden="true"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#" data-action="expandallcourseindexsections">
+                            <i class="icon fa fa-angles-down fa-fw " aria-hidden="true"></i>
+                            Alles aufklappen
+                        </a>
+                        <a class="dropdown-item" href="#" data-action="collapseallcourseindexsections">
+                            <span class="dir-rtl-hide"><i class="icon fa fa-angles-right fa-fw " aria-hidden="true"></i></span>
+                            <span class="dir-ltr-hide"><i class="icon fa fa-angles-left fa-fw " aria-hidden="true"></i></span>
+                            Alles einklappen
+                        </a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                        <nav id="courseindex" class="courseindex">
+    <div id="courseindex-content">
+        <div id="course-index" class="courseindex " role="tree">
+
+
+    <div class="courseindex-section " id="course-index-section-23113" data-for="section" data-id="23113" data-number="0" role="treeitem" aria-owns="courseindexcollapse0" tabindex="0" aria-selected="true">
+        <div class="courseindex-item d-flex courseindex-section-title" id="courseindexsection0" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse0" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse0" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=23113" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Allgemeines
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse0" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection0" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="23113" role="group" tabindex="-1">
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-85730" data-for="cm" data-id="85730" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/forum/view.php?id=85730" data-for="cm_name" tabindex="-1">
+                        Announcements
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94146" data-for="cm" data-id="94146" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/page/view.php?id=94146" data-for="cm_name" tabindex="-1">
+                        SMÜ 2.Sem
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94997" data-for="cm" data-id="94997" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94997" data-for="cm_name" tabindex="-1">
+                        2. SMÜ Ergebnisse
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-23429" data-for="section" data-id="23429" data-number="1" role="treeitem" aria-owns="courseindexcollapse1" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                
+                
+                courseindex-section-title" id="courseindexsection1" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse1" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse1" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=23429" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Abgaben
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse1" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection1" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="23429" role="group" tabindex="-1">
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-86872" data-for="cm" data-id="86872" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=86872" data-for="cm_name" tabindex="-1">
+                        1. Umweltdatenverwaltung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-88615" data-for="cm" data-id="88615" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=88615" data-for="cm_name" tabindex="-1">
+                        2. Einfache Vererbung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89132" data-for="cm" data-id="89132" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=89132" data-for="cm_name" tabindex="-1">
+                        3. Fahrzeugsammlung Polymorphie (protected, super, override)
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89399" data-for="cm" data-id="89399" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=89399" data-for="cm_name" tabindex="-1">
+                        4. abstract - Mitarbeiterverwaltung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89658" data-for="cm" data-id="89658" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=89658" data-for="cm_name" tabindex="-1">
+                        5. Zahlungssystem mit Interfaces
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89673" data-for="cm" data-id="89673" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=89673" data-for="cm_name" tabindex="-1">
+                        5.1. Zahlungssystem mit Interfaces - Zusatzübung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90098" data-for="cm" data-id="90098" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=90098" data-for="cm_name" tabindex="-1">
+                        7. Theorie Ausarbeitung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90391" data-for="cm" data-id="90391" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=90391" data-for="cm_name" tabindex="-1">
+                        8. Exceptions - Bankverwaltung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90463" data-for="cm" data-id="90463" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=90463" data-for="cm_name" tabindex="-1">
+                        9. Eigenes Cheatsheet - Vorbereitung Test
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90600" data-for="cm" data-id="90600" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=90600" data-for="cm_name" tabindex="-1">
+                        10. Übung - Vererbung, Polymorphie, Interfaces, Exceptions
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-91291" data-for="cm" data-id="91291" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=91291" data-for="cm_name" tabindex="-1">
+                        11. Schriftliche Ausarbeitung File I/O, XML, JSON
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-91727" data-for="cm" data-id="91727" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=91727" data-for="cm_name" tabindex="-1">
+                        12. Produktverwaltung - JSON, enum, ComboBox
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92074" data-for="cm" data-id="92074" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=92074" data-for="cm_name" tabindex="-1">
+                        13. Produktverwaltung Erweiterung - XML
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92488" data-for="cm" data-id="92488" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=92488" data-for="cm_name" tabindex="-1">
+                        14. String Manipulationen Übung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item d-flex pageitem" id="course-index-cm-93254" data-for="cm" data-id="93254" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93254" data-for="cm_name" tabindex="-1">
+                        16. Arbeitsblatt Rekursion
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93255" data-for="cm" data-id="93255" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93255" data-for="cm_name" tabindex="-1">
+                        17. Rekursion Übungen
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93256" data-for="cm" data-id="93256" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93256" data-for="cm_name" tabindex="-1">
+                        17.1 Türme von Hanoi - Rekursion
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93521" data-for="cm" data-id="93521" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93521" data-for="cm_name" tabindex="-1">
+                        18. Testing
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93890" data-for="cm" data-id="93890" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93890" data-for="cm_name" tabindex="-1">
+                        19. Graphics - kurze Zwischenabgabe
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94127" data-for="cm" data-id="94127" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94127" data-for="cm_name" tabindex="-1">
+                        20. Zeichenprogramm
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94577" data-for="cm" data-id="94577" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94577" data-for="cm_name" tabindex="-1">
+                        21. Projektbeschreibung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94647" data-for="cm" data-id="94647" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94647" data-for="cm_name" tabindex="-1">
+                        Projektfortschritt FR - 11.04.2025
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94662" data-for="cm" data-id="94662" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94662" data-for="cm_name" tabindex="-1">
+                        22. Aktualisiertes Cheat-Sheet
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94873" data-for="cm" data-id="94873" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94873" data-for="cm_name" tabindex="-1">
+                        Aktueller Zwischenstand - Projekt - 24.04.2025
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-94880" data-for="cm" data-id="94880" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=94880" data-for="cm_name" tabindex="-1">
+                        23. KarteikartenManager
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-95107" data-for="cm" data-id="95107" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/folder/view.php?id=95107" data-for="cm_name" tabindex="-1">
+                        23. KarteikartenManager - Lösung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-95110" data-for="cm" data-id="95110" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=95110" data-for="cm_name" tabindex="-1">
+                        Übungsbeispiel - Test
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-95485" data-for="cm" data-id="95485" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=95485" data-for="cm_name" tabindex="-1">
+                        24. Testverbesserung
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        dimmed
+                        d-flex
+                        " id="course-index-cm-95867" data-for="cm" data-id="95867" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=95867" data-for="cm_name" tabindex="-1">
+                        Projektabgabe
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24731" data-for="section" data-id="24731" data-number="2" role="treeitem" aria-owns="courseindexcollapse2" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                dimmed
+                
+                courseindex-section-title" id="courseindexsection2" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse2" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse2" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24731" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Abgaben 2.Semester
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse2" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection2" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24731" role="group" tabindex="-1">
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24657" data-for="section" data-id="24657" data-number="3" role="treeitem" aria-owns="courseindexcollapse3" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                
+                
+                courseindex-section-title" id="courseindexsection3" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse3" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse3" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24657" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Regex
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse3" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection3" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24657" role="group" tabindex="-1">
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92735" data-for="cm" data-id="92735" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/url/view.php?id=92735" data-for="cm_name" tabindex="-1">
+                        Regex101
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92736" data-for="cm" data-id="92736" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/url/view.php?id=92736" data-for="cm_name" tabindex="-1">
+                        Regex Learn
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92737" data-for="cm" data-id="92737" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/url/view.php?id=92737" data-for="cm_name" tabindex="-1">
+                        Regex CheatSheet
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92738" data-for="cm" data-id="92738" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/url/view.php?id=92738" data-for="cm_name" tabindex="-1">
+                        Regex CheatSheet2
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92742" data-for="cm" data-id="92742" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=92742" data-for="cm_name" tabindex="-1">
+                        Regex Java
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24012" data-for="section" data-id="24012" data-number="4" role="treeitem" aria-owns="courseindexcollapse4" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                
+                
+                courseindex-section-title" id="courseindexsection4" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse4" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse4" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24012" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Unterlagen
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse4" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection4" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24012" role="group" tabindex="-1">
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89010" data-for="cm" data-id="89010" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/folder/view.php?id=89010" data-for="cm_name" tabindex="-1">
+                        Musterlösung - Umweltdatenbank
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-89053" data-for="cm" data-id="89053" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/url/view.php?id=89053" data-for="cm_name" tabindex="-1">
+                        IDE - IntelliJ installieren
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90369" data-for="cm" data-id="90369" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=90369" data-for="cm_name" tabindex="-1">
+                        Folien - Debugging
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-90394" data-for="cm" data-id="90394" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=90394" data-for="cm_name" tabindex="-1">
+                        Folien - Error Handling
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-91726" data-for="cm" data-id="91726" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=91726" data-for="cm_name" tabindex="-1">
+                        Testangabe
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93257" data-for="cm" data-id="93257" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=93257" data-for="cm_name" tabindex="-1">
+                        Folien - Rekursion
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-93886" data-for="cm" data-id="93886" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/resource/view.php?id=93886" data-for="cm_name" tabindex="-1">
+                        Graphics Beispielcode
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24327" data-for="section" data-id="24327" data-number="5" role="treeitem" aria-owns="courseindexcollapse5" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                dimmed
+                
+                courseindex-section-title" id="courseindexsection5" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse5" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse5" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24327" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Überprüfungen
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse5" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection5" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24327" role="group" tabindex="-1">
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24414" data-for="section" data-id="24414" data-number="6" role="treeitem" aria-owns="courseindexcollapse6" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                dimmed
+                
+                courseindex-section-title" id="courseindexsection6" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse6" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse6" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24414" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                File Access
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse6" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection6" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24414" role="group" tabindex="-1">
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="courseindex-section " id="course-index-section-24687" data-for="section" data-id="24687" data-number="7" role="treeitem" aria-owns="courseindexcollapse7" tabindex="-1" aria-selected="false">
+        <div class="courseindex-item d-flex
+                
+                
+                courseindex-section-title" id="courseindexsection7" data-for="section_item" tabindex="-1">
+            <a data-toggle="collapse" href="#courseindexcollapse7" class="courseindex-chevron icons-collapse-expand " aria-expanded="true" aria-controls="courseindexcollapse7" tabindex="-1">
+                <span class="collapsed-icon icon-no-margin mr-1" title="Ausklappen" tabindex="-1">
+                    <span class="dir-rtl-hide" tabindex="-1"><i class="icon fa fa-chevron-right fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="dir-ltr-hide" tabindex="-1"><i class="icon fa fa-chevron-left fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                    <span class="sr-only" tabindex="-1">Ausklappen</span>
+                </span>
+                <span class="expanded-icon icon-no-margin mr-1" title="Einklappen" tabindex="-1">
+                    <i class="icon fa fa-chevron-down fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    <span class="sr-only" tabindex="-1">Einklappen</span>
+                </span>
+            </a>
+            <a href="https://moodle.htl-donaustadt.at/course/section.php?id=24687" class="courseindex-link text-truncate" data-action="togglecourseindexsection" data-for="section_title" tabindex="-1">
+                Algorithmen
+            </a>
+            <span class="current-badge badge bg-primary text-white ml-2 px-2 rounded-pill" tabindex="-1">
+                Hervorgehoben
+            </span>
+            <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+            </span>
+            <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+        </div>
+        <div id="courseindexcollapse7" class="courseindex-item-content collapse show" aria-labelledby="courseindexsection7" role="group" tabindex="-1">
+            <ul class="courseindex-sectioncontent unlist" data-for="cmlist" data-id="24687" role="group" tabindex="-1">
+
+
+                <li class="courseindex-item
+                        
+                        
+                        
+                        d-flex
+                        " id="course-index-cm-92931" data-for="cm" data-id="92931" role="treeitem" tabindex="-1" aria-selected="false">
+                    <span class="completioninfo completion_none" data-for="cm_completion" data-value="NaN"></span>
+                    <a class="courseindex-link text-truncate" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=92931" data-for="cm_name" tabindex="-1">
+                        15. Kartennavigation - Find the shortest path
+                    </a>
+                    <span class="courseindex-locked ml-1" data-for="cm_name" tabindex="-1">
+                        <i class="icon fa fa-lock fa-fw " aria-hidden="true" tabindex="-1"></i>
+                    </span>
+                    <span class="dragicon ml-auto" tabindex="-1"><i class="icon fa fa-arrows fa-fw " aria-hidden="true" tabindex="-1"></i></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    </div>
+</nav>
+
+    </div>
+</div>
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers show-drawer-left drag-container">
+        <div id="topofscroll" class="main-inner">
+            <div class="drawer-toggles d-flex">
+                    <div class="drawer-toggler drawer-left-toggle open-nav d-print-none">
+                        <button class="btn icon-no-margin" data-toggler="drawers" data-action="toggle" data-target="theme_boost-drawers-courseindex" data-toggle="tooltip" data-placement="right" title="Kursindex öffnen">
+                            <span class="sr-only">Kursindex öffnen</span>
+                            <i class="icon fa fa-list fa-fw " aria-hidden="true"></i>
+                        </button>
+                    </div>
+            </div>
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100">
+        <div class="d-flex flex-wrap">
+            <div id="page-navbar">
+                <nav aria-label="Navigationsleiste">
+    <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.htl-donaustadt.at/course/view.php?id=8854" title="24/25 3AHITN SEW STRI">
+                        24/25 3AHITN SEW STRI
+                    </a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <a href="https://moodle.htl-donaustadt.at/course/section.php?id=23429" data-section-name-for="23429">
+                        Abgaben
+                    </a>
+                </li>
+        
+                <li class="breadcrumb-item">
+                    <span>
+                        16. Arbeitsblatt Rekursion
+                    </span>
+                </li>
+        </ol>
+</nav>
+            </div>
+            <div class="ml-auto d-flex">
+                
+            </div>
+            <div id="course-header">
+                
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+                        <div class="page-context-header d-flex align-items-center mb-2">
+    <div class="page-header-image">
+        <div class="assessment activityiconcontainer icon-size-6 modicon_assign"><img class="icon activityicon " aria-hidden="true" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/monologo.svg" alt=""></div>
+    </div>
+    <div class="page-header-headings">
+        <h1 class="h2 mb-0">16. Arbeitsblatt Rekursion</h1>
+    </div>
+</div>
+                    </div>
+            <div class="header-actions-container ml-auto" data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+            <div id="page-content" class="pb-3 d-print-block">
+                <div id="region-main-box">
+                    <div id="region-main">
+
+                        <span class="notifications" id="user-notifications"></span>
+                            <span id="maincontent"></span>
+                            <div class="activity-header" data-for="page-activity-header">
+                                    <span class="sr-only">Abschlussbedingungen</span>
+                                    <div data-region="activity-information" data-activityname="16. Arbeitsblatt Rekursion" class="activity-information">
+
+
+    <div data-region="activity-dates" class="activity-dates">
+            <div>
+                <strong>Geöffnet:</strong> Montag, 3. März 2025, 00:00
+            </div>
+            <div>
+                <strong>Fällig:</strong> Donnerstag, 6. März 2025, 11:00
+            </div>
+    </div>
+</div>
+                                    <div class="activity-description" id="intro">
+                                        <div class="box py-3 generalbox boxaligncenter"><div class="no-overflow"><p>Diejenigen die mir bereits am 03.03.25 das Arbeitsblatt abgegeben haben brauchen keine Abgabe mehr einreichen!</p></div><div id="assign_files_tree68420ac7d26b91"><div class="ygtvitem" id="ygtv0"><div class="ygtvchildren" id="ygtvc0"><div class="ygtvitem" id="ygtv1"><table id="ygtvtableel1" border="0" cellpadding="0" cellspacing="0" class="ygtvtable ygtvdepth0 ygtv-expanded ygtv-highlight0"><tbody><tr class="ygtvrow"><td class="ygtvcell ygtvln"><div class="ygtvspacer"></div></td><td id="ygtvcontentel1" class="ygtvcell ygtvhtml ygtvcontent"><div><div class="fileuploadsubmission"><img class="icon icon" alt="Arbeitsblatt Rekursion.pdf" title="Arbeitsblatt Rekursion.pdf" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/pdf.svg"> <a target="_blank" href="https://moodle.htl-donaustadt.at/pluginfile.php/141253/mod_assign/introattachment/0/Arbeitsblatt%20Rekursion.pdf?forcedownload=1">Arbeitsblatt Rekursion.pdf</a>   </div><div class="fileuploadsubmissiontime">6. März 2025, 10:06</div></div></td></tr></tbody></table><div class="ygtvchildren" id="ygtvc1" style="display:none;"></div></div></div></div></div></div>
+                                    </div>
+                                </div>
+                        <div role="main"><div class="container-fluid mb-4">
+    <div class="row">
+    </div>
+</div><div class="submissionstatustable"><h3>Abgabestatus</h3><div class="box py-3 boxaligncenter submissionsummarytable"><div class="table-responsive"><table class="generaltable table-bordered">
+<tbody><tr class="">
+<th class="cell c0" style="" scope="row">Abgabestatus</th>
+<td class="cell c1 lastcol" style="">Bisher wurden keine Aufgaben abgegeben</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Bewertungsstatus</th>
+<td class="submissionnotgraded cell c1 lastcol" style="">Nicht bewertet</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Verbleibende Zeit</th>
+<td class="overdue cell c1 lastcol" style="">Abgabeende überschritten seit: 91 Tage 11 Stunden</td>
+</tr>
+<tr class="">
+<th class="cell c0" style="" scope="row">Zuletzt geändert</th>
+<td class="cell c1 lastcol" style="">-</td>
+</tr>
+<tr class="lastrow">
+<th class="cell c0" style="" scope="row">Abgabekommentare</th>
+<td class="cell c1 lastcol" style=""><div class="box py-3 boxaligncenter plugincontentsummary summary_assignsubmission_comments_537764"><div class="commentscontainer"><div style="display:none" id="cmt-tmpl"><div class="comment-message"><div class="comment-message-meta mr-3"><span class="picture">___picture___</span><span class="user">___name___</span> - <span class="time">___time___</span></div><div class="text">___content___</div></div></div><div class="mdl-left"><a class="showcommentsnonjs" href="https://moodle.htl-donaustadt.at/mod/assign/view.php?id=93254&amp;rownum=0&amp;useridlistid=68420ac7c0c03517141770&amp;action&amp;nonjscomment=1&amp;comment_itemid=537764&amp;comment_context=141253&amp;comment_component=assignsubmission_comments&amp;comment_area=submission_comments">Kommentare anzeigen</a><a class="comment-link" id="comment-link-68420ac848f94" href="#" role="button" aria-expanded="false"><img id="comment-img-68420ac848f94" class="icon" src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/collapsed.svg" alt="Kommentare"><span id="comment-link-text-68420ac848f94">Kommentare (<span class="comment-link-count">0</span>)</span></a><div id="comment-ctrl-68420ac848f94" class="comment-ctrl"><ul id="comment-list-68420ac848f94" class="comment-list"><li class="first"></li></ul><div id="comment-pagination-68420ac848f94" class="comment-pagination"></div><div class="comment-area"><div class="db"><label for="dlg-content-68420ac848f94" class="sr-only">Kommentar</label><textarea name="content" rows="2" id="dlg-content-68420ac848f94" aria-label="Kommentar hinzufügen..." cols="20" style="color: grey;">Kommentar hinzufügen...</textarea></div><div class="fd" id="comment-action-68420ac848f94"><a id="comment-action-post-68420ac848f94" href="#">Kommentar speichern</a><span> | </span><a id="comment-action-cancel-68420ac848f94" href="#">Abbrechen</a></div></div><div class="clearer"></div></div></div></div></div></td>
+</tr>
+</tbody>
+</table>
+</div></div></div></div>
+                        
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer id="page-footer" class="footer-popover bg-white">
+            <div data-region="footer-container-popover">
+                <button class="btn btn-icon bg-secondary icon-no-margin btn-footer-popover" data-action="footer-popover" aria-label="Fußbereich anzeigen" data-original-title="" title="">
+                    <i class="icon fa fa-question fa-fw " aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="footer-content-popover container" data-region="footer-content-popover">
+                    <div class="footer-section p-3 border-bottom">
+        
+        
+                            <div class="footer-support-link"><a href="http://helpdesk.htl-donaustadt.at/upload/open.php" target="blank"><i class="icon fa fa-envelope-o fa-fw " aria-hidden="true"></i>Website-Support<i class="icon fa fa-external-link fa-fw ml-1" aria-hidden="true"></i></a></div>
+                    </div>
+                <div class="footer-section p-3 border-bottom">
+                    <div class="logininfo">
+                        <div class="logininfo">Sie sind angemeldet als <a href="https://moodle.htl-donaustadt.at/user/profile.php?id=6451" title="Profil anzeigen">Riedl, Patrick</a> (<a href="https://moodle.htl-donaustadt.at/login/logout.php?sesskey=XcxCGIlqiL">Logout</a>)</div>
+                    </div>
+                    <div class="tool_usertours-resettourcontainer">
+                    </div>
+        
+                    <div class="tool_dataprivacy"><a href="https://moodle.htl-donaustadt.at/admin/tool/dataprivacy/summary.php">Unsere Datenlöschfristen</a></div><div><a class="mobilelink" href="https://download.moodle.org/mobile?version=2024042207.05&amp;lang=de&amp;iosappid=633359593&amp;androidappid=com.moodle.moodlemobile">Laden Sie die mobile App</a></div>
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://moodle.htl-donaustadt.at/lib/requirejs.php/1743630658/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://moodle.htl-donaustadt.at/lib/javascript.php/1743630658/lib/jquery/jquery-3.7.1.min',
+        jqueryui: 'https://moodle.htl-donaustadt.at/lib/javascript.php/1743630658/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://moodle.htl-donaustadt.at/lib/javascript.php/1743630658/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/javascript_004.php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+M.util.js_pending('filter_mathjaxloader/loader'); require(['filter_mathjaxloader/loader'], function(amd) {amd.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"de"}); M.util.js_complete('filter_mathjaxloader/loader');});;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('de');
+});;
+M.util.js_pending('plagiarism_turnitinsim/cv_launch'); require(['plagiarism_turnitinsim/cv_launch'], function(amd) {amd.openCv(); M.util.js_complete('plagiarism_turnitinsim/cv_launch');});;
+M.util.js_pending('plagiarism_turnitinsim/resend_submission'); require(['plagiarism_turnitinsim/resend_submission'], function(amd) {amd.resendSubmission(); M.util.js_complete('plagiarism_turnitinsim/resend_submission');});;
+M.util.js_pending('plagiarism_turnitinsim/eula_response'); require(['plagiarism_turnitinsim/eula_response'], function(amd) {amd.eulaResponse(); M.util.js_complete('plagiarism_turnitinsim/eula_response');});;
+M.util.js_pending('core_courseformat/courseeditor'); require(['core_courseformat/courseeditor'], function(amd) {amd.setViewFormat("8854", {"editing":false,"supportscomponents":true,"statekey":"1748984049_1749157830","overriddenStrings":[]}); M.util.js_complete('core_courseformat/courseeditor');});;
+
+require(['core_courseformat/local/courseindex/placeholder'], function(component) {
+    component.init('course-index-placeholder');
+});
+;
+
+require(['core_courseformat/local/courseindex/drawer'], function(component) {
+    component.init('courseindex');
+});
+;
+M.util.js_pending('core_courseformat/local/content/activity_header'); require(['core_courseformat/local/content/activity_header'], function(amd) {amd.init(); M.util.js_complete('core_courseformat/local/content/activity_header');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-68420ac826b22-navbar-nav'));
+    });
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, Controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new Controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+    require(['theme_boost/courseindexdrawercontrols'], function(component) {
+    component.init('courseindexdrawercontrols');
+    });
+;
+
+M.util.js_pending('theme_boost/drawers:load');
+require(['theme_boost/drawers'], function() {
+    M.util.js_complete('theme_boost/drawers:load');
+});
+;
+
+require(['theme_boost/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_boost/loader');
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(141253, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});;
+M.util.js_pending('core/storage_validation'); require(['core/storage_validation'], function(amd) {amd.init(1749157824); M.util.js_complete('core/storage_validation');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.yui.add_module({"core_comment":{"name":"core_comment","fullpath":"https:\/\/moodle.htl-donaustadt.at\/lib\/javascript.php\/1743630658\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}});
+
+//]]>
+</script>
+<script src="24-25-3AHITN-SEW-STRI_%2016.%20Arbeitsblatt%20Rekursion%20_%20Lernplattform%20der%20htl%20donaustadt_files/MathJax.js"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Zuletzt ge\u00e4ndert","name":"Name","error":"Fehler","info":"Infos","yes":"Ja","no":"Nein","cancel":"Abbrechen","addcomment":"Kommentar hinzuf\u00fcgen...","comments":"Kommentare","commentsrequirelogin":"Sie m\u00fcssen angemeldet sein, um Kommentare sehen zu k\u00f6nnen.","deletecommentbyon":"Kommentar l\u00f6schen, der von {$a->user} am {$a->time} gepostet wurde","confirm":"Best\u00e4tigen","areyousure":"Sind Sie sicher?","closebuttontitle":"Schlie\u00dfen","unknownerror":"Unbekannter Fehler","file":"Datei","url":"URL","collapseall":"Alles einklappen","expandall":"Alles aufklappen"},"repository":{"type":"Typ","size":"Gr\u00f6\u00dfe","invalidjson":"Ung\u00fcltiger JSON-Text","nofilesattached":"Keine Datei","filepicker":"Dateiauswahl","logout":"Abmelden","nofilesavailable":"Keine Dateien vorhanden","norepositoriesavailable":"Sie k\u00f6nnen hier zur Zeit keine Dateien hochladen.","fileexistsdialogheader":"Datei bereits vorhanden","fileexistsdialog_editor":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt, den Sie gerade bearbeiten","fileexistsdialog_filemanager":"Eine Datei mit diesem Namen wurde bereits an den Text angeh\u00e4ngt","renameto":"Nach '{$a}' umbenennen","referencesexist":"Es gibt {$a} Links zu dieser Datei.","select":"W\u00e4hlen Sie"},"admin":{"confirmdeletecomments":"M\u00f6chten Sie die ausgew\u00e4hlten Kommentare wirklich l\u00f6schen?","confirmation":"Best\u00e4tigung"},"plagiarism_turnitinsim":{"submissiondisplaystatus:queued":"In der Warteschlange","eulaaccepted":"Danke, dass Sie die neue Turnitin-EULA akzeptiert haben. Alle zuk\u00fcnftigen \u00dcbermittlungen werden nun zur Verarbeitung an Turnitin gesendet.","euladeclined":"Ihre \u00dcbermittlungen werden nicht an Turnitin gesendet, da Sie die Turnitin-Endbenutzer-Lizenzvereinbarung nicht akzeptiert haben."},"debug":{"debuginfo":"Debug-Info","line":"Zeile","stacktrace":"Stack trace"},"langconfig":{"labelsep":":\u00a0"}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() { M.util.js_pending('random68420ac7d26b92'); Y.use('mod_assign', function(Y) { M.mod_assign.init_tree(Y, true, "assign_files_tree68420ac7d26b91");  M.util.js_complete('random68420ac7d26b92'); });
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random68420ac7d26b95'); Y.on('domready', function() {  M.util.js_pending('random68420ac7d26b95'); Y.use('core_comment', function(Y) { M.core_comment.init(Y, {"client_id":"68420ac848f94","commentarea":"submission_comments","itemid":"537764","page":0,"courseid":"8854","contextid":141253,"component":"assignsubmission_comments","notoggle":false,"autostart":false});  M.util.js_complete('random68420ac7d26b95'); });  M.util.js_complete('random68420ac7d26b95'); });
+ M.util.js_pending('random68420ac7d26b96'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random68420ac7d26b96'); });
+})();
+//]]>
+</script>
+
+                </div>
+                <div class="footer-section p-3">
+                    <div>Powered by <a href="https://moodle.com/">Moodle</a></div>
+                </div>
+            </div>
+        
+            <div class="footer-content-debugging footer-dark bg-dark text-light">
+                <div class="container-fluid footer-dark-inner">
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+</body></html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18193c18-7aee-4a00-8e41-68aead92a5e7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../KarteiKartenManager/KarteiKartenManager.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../KarteiKartenManager/src/CardDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../KarteiKartenManager/src/Karteikarte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../KarteiKartenManager/src/LearnDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../KarteiKartenManager/src/MainFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitter/ProjektVideoSplitter.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitterJava/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitterJava/.idea/ProjektVideoSplitterJava.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../VideoSplitterProjekt-Patrick_Riedl-Nikola_Logofetic/.idea/VideoSplitterProjekt-Patrick_Riedl-Nikola_Logofetic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../karteiKartenGUI/karteiKartenGUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitterJava/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitterJava/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjektVideoSplitterJava/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/ProjectVideoSplitter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Aufgabe 20/Aufgabe20.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/src/VideoSplitter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectVideoSplitter/src/VideoSplitterUtils.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "PatrickMagAnime"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/PatrickMagAnime/SEW_Schule.git",
+    "accountId": "437715f3-7af7-4be4-a416-2df4486060bb"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2wmTluZTlew7Krie1Fs2Ml81zGc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ToDoApp.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW": "false",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "488",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/patrick/Documents/SEW/3.Klasse/Testverbesserung/ToDoListe",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="ToDoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ToDoApp" />
+      <module name="ToDoListe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ToDoApp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18193c18-7aee-4a00-8e41-68aead92a5e7" name="Changes" comment="" />
+      <created>1746645905007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746645905007</updated>
+      <workItem from="1746645906307" duration="5503000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
